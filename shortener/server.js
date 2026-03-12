@@ -281,10 +281,11 @@ async function handleRedirect(req, res, code, unlockPath) {
 }
 
 // ── Password-prompt HTML ──────────────────────────────────────────────────────
-function passwordPromptHtml(code, errorMsg = '') {
+function passwordPromptHtml(code, actionPath, errorMsg = '') {
   const err = errorMsg
     ? `<p style="color:#e55;margin:0 0 1rem;font-size:.875em">${errorMsg}</p>`
     : '';
+  const action = escapeHtml(actionPath);
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -312,7 +313,7 @@ function passwordPromptHtml(code, errorMsg = '') {
 <div class="card">
   <h1>Password required</h1>
   ${err}
-  <form method="GET">
+  <form method="GET" action="${action}">
     <label for="p">Password</label>
     <input type="password" id="p" name="password" autofocus required>
     <button type="submit">Continue</button>
@@ -473,7 +474,7 @@ app.get('/s/:code/unlock', (req, res) => {
   }
   const { error } = req.query;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  return res.send(passwordPromptHtml(code, error ? decodeURIComponent(error) : ''));
+  return res.send(passwordPromptHtml(code, `/s/${encodeURIComponent(code)}`, error ? decodeURIComponent(error) : ''));
 });
 
 // GET /api/links/:code/stats
@@ -584,7 +585,7 @@ app.get('/:code/unlock', (req, res, next) => {
   }
   const { error } = req.query;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
-  return res.send(passwordPromptHtml(code, error ? decodeURIComponent(error) : ''));
+  return res.send(passwordPromptHtml(code, `/${encodeURIComponent(code)}`, error ? decodeURIComponent(error) : ''));
 });
 
 // GET /:code — short-domain redirect
