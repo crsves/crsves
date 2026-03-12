@@ -35,6 +35,7 @@
     />
     <link href="/fonts/local-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="../_astro/style.COBHKi4A.css" />
+    <script src="/scripts/link-shortener.js"></script>
     <script type="module" src="../_astro/hoisted.DLZDcrRD.js"></script>
     <style>
       ._sub {
@@ -90,30 +91,6 @@
       ._sns_10du9_86 {
         display: none;
       }
-      ._scards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: 1.5rem;
-      }
-      ._scard {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        padding: 0.45rem 0.85rem;
-        border: 1px solid var(--color-border);
-        border-radius: 100px;
-        font-size: 0.8em;
-        text-decoration: none;
-        color: inherit;
-        transition: opacity 0.15s;
-      }
-      ._scard:hover {
-        opacity: 0.6;
-      }
-      ._scard svg {
-        flex-shrink: 0;
-      }
       ._resumeSection {
         grid-column: 2;
         grid-row: 1 / span 2;
@@ -164,60 +141,6 @@
         height: 100%;
         object-fit: contain;
       }
-      ._resumeOverlay {
-        position: fixed;
-        inset: 0;
-        display: none;
-        z-index: 200;
-      }
-      ._resumeOverlay:target {
-        display: block;
-      }
-      ._resumeBackdrop {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.84);
-        backdrop-filter: blur(8px);
-      }
-      ._resumePanel {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 0.9rem;
-        width: 100%;
-        height: 100%;
-        padding: var(--padding-outside);
-      }
-      ._resumePanelHeader {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        font-size: 0.78em;
-      }
-      ._resumeClose {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px solid var(--color-border);
-      }
-      ._resumeFrame {
-        flex: 1;
-        min-height: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        border: 1px solid var(--color-border);
-        background: #080808;
-      }
-      ._resumeFrame img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-      }
       @media screen and (max-width: 768px) {
         ._resumeSection {
           grid-column: 1;
@@ -226,9 +149,6 @@
         }
         ._resumePreview {
           min-height: 12rem;
-        }
-        ._resumePanel {
-          padding: 1rem;
         }
         ._kvDialogImage_cpv9r_219 {
           top: calc(28.75rem - 100vw);
@@ -588,29 +508,6 @@
                 <div class="_mainDesc_cpv9r_47">
                   <p>crsves</p>
                   <p>digital creator</p>
-                  <div class="_scards" style="margin-top: 1rem">
-                    <a
-                      href="https://www.instagram.com/crsves/"
-                      class="_scard"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Instagram<span style="opacity: 0.6">@crsves</span></a
-                    ><a
-                      href="https://discord.com/"
-                      class="_scard"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Discord<span style="opacity: 0.6">@crsves</span></a
-                    ><a href="mailto:hi@crsv.es" class="_scard"
-                      >Email<span style="opacity: 0.6">hi@crsv.es</span></a
-                    ><a
-                      href="https://github.com/crsves"
-                      class="_scard"
-                      target="_blank"
-                      rel="noreferrer"
-                      >GitHub<span style="opacity: 0.6">@crsves</span></a
-                    >
-                  </div>
                 </div>
                 <ul class="_mainLinks_cpv9r_67">
                   <li>
@@ -965,7 +862,7 @@
               <section class="_subSection_cpv9r_322 _resumeSection">
                 <div class="_subSectionInner_cpv9r_335">
                   <h2 class="_subHeading_cpv9r_349">(Resume)</h2>
-                  <a class="_resumeCard" href="https://crsv.es/profile#resume">
+                  <a class="_resumeCard" href="/profile/resume/">
                     <span class="_resumeLabel">
                       <span>one connected file</span>
                       <span>opens fullscreen</span>
@@ -988,18 +885,6 @@
                 </div>
               </section>
             </div>
-            <section id="resume" class="_resumeOverlay" aria-label="Resume viewer">
-              <a class="_resumeBackdrop" href="/profile/" aria-label="Close resume viewer"></a>
-              <div class="_resumePanel">
-                <div class="_resumePanelHeader">
-                  <p>crsves / resume</p>
-                  <a class="_resumeClose" href="/profile/">close</a>
-                </div>
-                <div class="_resumeFrame">
-                  <img src="/devin.png" alt="Resume for crsves" />
-                </div>
-              </div>
-            </section>
             <div class="_pickup_cpv9r_423">
               <section>
                 <h2 class="_heading_o1ekn_1">(pickup works)</h2>
