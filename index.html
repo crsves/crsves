@@ -23,8 +23,8 @@
       property="og:description"
       content="crsves，位於 Canada。Instagram：@crsves，Discord：@crsves，Email：hi@crsv.es，GitHub：@crsves。"
     />
-    <meta property="og:url" content="https://109ichiki.com/" />
-    <meta property="og:image" content="https://109ichiki.com/og-image.png" />
+    <meta property="og:url" content="https://crsv.es/" />
+    <meta property="og:image" content="https://crsv.es/og-image.png" />
     <meta property="og:site_name" content="crsves" />
     <meta property="og:locale" content="zh_TW" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -113,6 +113,255 @@
       }
       ._scard svg {
         flex-shrink: 0;
+      }
+      ._ls-widget {
+        border: 1px solid var(--color-border);
+        padding: 1.5rem 1.75rem;
+        width: 100%;
+      }
+      ._ls-tabs {
+        display: flex;
+        gap: 0;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+      ._ls-tab {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+        font: inherit;
+        font-size: 0.72em;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 0.5rem 1.25rem 0.65rem;
+        opacity: 0.45;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        transition: opacity 0.15s;
+      }
+      ._ls-tab:hover { opacity: 0.8; }
+      ._ls-tab-active {
+        opacity: 1;
+        border-bottom-color: var(--color-text);
+      }
+      ._ls-field {
+        margin-bottom: 1.1rem;
+      }
+      ._ls-label {
+        display: block;
+        font-size: 0.62em;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        opacity: 0.45;
+        margin-bottom: 0.5rem;
+      }
+      ._ls-input {
+        width: 100%;
+        background: transparent;
+        border: 1px solid var(--color-border);
+        color: inherit;
+        font: inherit;
+        font-size: 0.875em;
+        padding: 0.6rem 0.75rem;
+        outline: none;
+        transition: border-color 0.15s;
+      }
+      ._ls-input:focus { border-color: var(--color-text); }
+      ._ls-btn {
+        display: inline-block;
+        background: transparent;
+        border: 1px solid var(--color-text);
+        color: inherit;
+        font: inherit;
+        font-size: 0.78em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding: 0.6rem 1.25rem;
+        cursor: pointer;
+        transition: background 0.15s, color 0.15s;
+        margin-top: 0.5rem;
+      }
+      ._ls-btn:hover:not(:disabled) {
+        background: var(--color-text);
+        color: var(--color-bg);
+      }
+      ._ls-btn:disabled { opacity: 0.4; cursor: default; }
+      ._ls-btn-ghost {
+        border-color: var(--color-border);
+        opacity: 0.65;
+      }
+      ._ls-btn-ghost:hover:not(:disabled) {
+        background: var(--color-text);
+        color: var(--color-bg);
+        border-color: var(--color-text);
+        opacity: 1;
+      }
+      ._ls-btn-danger {
+        border-color: #c0392b;
+        color: #c0392b;
+      }
+      ._ls-btn-danger:hover:not(:disabled) {
+        background: #c0392b;
+        color: #fff;
+      }
+      ._ls-btn-sm { padding: 0.4rem 0.9rem; font-size: 0.72em; }
+      ._ls-adv-toggle {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: inherit;
+        font: inherit;
+        font-size: 0.72em;
+        letter-spacing: 0.09em;
+        opacity: 0.5;
+        padding: 0;
+        margin-bottom: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      ._ls-adv-toggle:hover { opacity: 0.9; }
+      ._ls-error {
+        font-size: 0.8em;
+        color: #e55;
+        margin: 0.25rem 0 0.75rem;
+      }
+      ._ls-result {
+        padding: 1.25rem;
+        border: 1px solid var(--color-border);
+      }
+      ._ls-result-label {
+        font-size: 0.62em;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        opacity: 0.45;
+        margin-bottom: 0.5rem;
+      }
+      ._ls-result-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      ._ls-result-url {
+        font-size: 1em;
+        color: inherit;
+        word-break: break-all;
+        flex: 1;
+      }
+      ._ls-copy {
+        background: transparent;
+        border: 1px solid var(--color-border);
+        color: inherit;
+        font: inherit;
+        font-size: 0.72em;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.75rem;
+        cursor: pointer;
+        flex-shrink: 0;
+        transition: background 0.15s, color 0.15s;
+      }
+      ._ls-copy:hover {
+        background: var(--color-text);
+        color: var(--color-bg);
+      }
+      ._ls-meta {
+        font-size: 0.75em;
+        opacity: 0.55;
+        margin-top: 0.5rem;
+      }
+      ._ls-token-box {
+        margin-top: 1rem;
+        padding: 0.85rem;
+        background: var(--color-border);
+        opacity: 0.85;
+      }
+      ._ls-token-label {
+        font-size: 0.62em;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        opacity: 0.65;
+        margin-bottom: 0.4rem;
+      }
+      ._ls-token {
+        font-family: monospace;
+        font-size: 0.75em;
+        word-break: break-all;
+        display: block;
+      }
+      ._ls-token-hint {
+        font-size: 0.68em;
+        opacity: 0.5;
+        margin-top: 0.5rem;
+      }
+      ._ls-stat-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      ._ls-stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        border: 1px solid var(--color-border);
+        margin: 1.25rem 0;
+      }
+      ._ls-stat-card {
+        padding: 0.75rem;
+        border: 1px solid var(--color-border);
+      }
+      ._ls-stat-num {
+        font-size: 1.3em;
+        margin-bottom: 0.3rem;
+      }
+      ._ls-bars {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        height: 60px;
+        border-bottom: 1px solid var(--color-border);
+        overflow-x: auto;
+      }
+      ._ls-bar-item {
+        flex: 1;
+        min-width: 4px;
+        max-width: 20px;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+      }
+      ._ls-bar {
+        width: 100%;
+        background: var(--color-text);
+        min-height: 2px;
+        opacity: 0.7;
+        transition: opacity 0.15s;
+      }
+      ._ls-bar-item:hover ._ls-bar { opacity: 1; }
+      ._ls-advanced { padding-top: 0.5rem; }
+
+      /* ── Link-shortener slide: bigger centered landscape ── */
+      ._serviceDialog_1fs6u_586[style*="--_index: 1"] {
+        position: fixed !important;
+        left: 4vw !important;
+        right: 4vw !important;
+        top: 5vh !important;
+        bottom: 5vh !important;
+        width: auto !important;
+        z-index: 9999 !important;
+        pointer-events: auto !important;
+      }
+      ._serviceDialog_1fs6u_586[style*="--_index: 1"] ._serviceDialogInner_1fs6u_601 {
+        height: 100% !important;
+      }
+      ._serviceDialog_1fs6u_586[style*="--_index: 1"] ._inner_3fli2_23 {
+        height: 100% !important;
+      }
+      ._serviceDialog_1fs6u_586[style*="--_index: 1"] ._body_3fli2_117 {
+        overflow-y: auto !important;
       }
     </style>
   </head>
@@ -217,7 +466,7 @@
     >
       <ul class="_list_2f0wn_73">
         <li>
-          <a href="./" class="_link_2f0wn_81" data-js="hamburger-menu-link">
+          <a href="/" class="_link_2f0wn_81" data-js="hamburger-menu-link">
             home
           </a>
         </li>
@@ -305,7 +554,7 @@
                 data-js="header-menu-item"
                 data-id="index"
               >
-                <a href="./" class="_menuLink_10du9_60"> home </a>
+                <a href="/" class="_menuLink_10du9_60"> home </a>
               </li>
               <li
                 class="_menuItem_10du9_55"
@@ -937,7 +1186,7 @@
                             data-js="index-service-id"
                             data-current="false"
                           >
-                            2: mv-illustration
+                            2: link-shortener
                             <span class="_serviceIdCurrent_1fs6u_562">
                               <svg
                                 width="12"
@@ -1114,7 +1363,7 @@
                       style="--_index: 1"
                       data-js="index-service-item"
                       data-visible="false"
-                      data-images="/cdn-images/dc8d9b8c076853fe9270a62314ae187ec95c79ca-w1200.png,/cdn-images/9eadb2a992d8575ac065c520e48e73b15ba8e1ec-w1200.png"
+                      data-images=""
                     >
                       <div class="_serviceDialogInner_1fs6u_601">
                         <div class="_root_3fli2_1" data-js="dialog-box">
@@ -1123,7 +1372,7 @@
                               class="_header_3fli2_40"
                               data-js="dialog-box-header"
                             >
-                              <h2 class="_title_3fli2_59">category_02</h2>
+                              <h2 class="_title_3fli2_59">link-shortener</h2>
                               <button
                                 class="_close_3fli2_70"
                                 data-js="dialog-box-close"
@@ -1133,45 +1382,148 @@
                               </button>
                             </div>
                             <div class="_body_3fli2_117">
-                              <div class="_serviceDialogBody_1fs6u_613">
-                                <h4 class="_serviceTitle_1fs6u_624">MV插圖</h4>
-                                <div class="_serviceDesc_1fs6u_629">
-                                  <p>
-                                    承接VOCALOID及Cover影片的<br />MV插圖繪製。
-                                  </p>
-                                </div>
-                                <div class="_serviceLink_1fs6u_643">
-                                  <a
-                                    href="works/?category=mv-illustration"
-                                    class="_root_2nwwz_1"
-                                    data-invert="true"
-                                  >
-                                    <span class="_inner_2nwwz_27">
-                                      MV前往插圖列表<span
-                                        class="_arrow_2nwwz_35"
-                                        ><svg
-                                          width="12"
-                                          height="9"
-                                          viewBox="0 0 12 9"
-                                          fill="none"
-                                          xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                          <path
-                                            d="M7.10603 8.30204L6.19403 7.39004L7.82803 5.75604L8.77803 4.95804L8.75903 4.90104L6.93503 5.01504H0.551025V3.72304H6.93503L8.75903 3.83704L8.77803 3.78004L7.82803 2.98204L6.19403 1.34804L7.10603 0.436035L11.039 4.36904L7.10603 8.30204Z"
-                                            fill="currentColor"
-                                          ></path></svg
-                                      ></span>
-                                    </span>
-                                  </a>
-                                </div>
-                                <div class="_serviceBarcode_1fs6u_648">
-                                  <span
-                                    class="_barcode_iyu6r_1"
-                                    aria-hidden="true"
-                                    translate="no"
-                                    text="category2"
-                                    >category2</span
-                                  >
+                              <div class="_serviceDialogBody_1fs6u_613" x-data="linkShortener()">
+                                <div class="_ls-widget">
+                                  <div class="_ls-tabs">
+                                    <button class="_ls-tab" :class="{'_ls-tab-active': tab==='shorten'}" @click="tab='shorten'">Shorten</button>
+                                    <button class="_ls-tab" :class="{'_ls-tab-active': tab==='stats'}" @click="tab='stats'">Stats</button>
+                                  </div>
+                                  <!-- Shorten panel -->
+                                  <div x-show="tab === 'shorten'">
+                                    <div x-show="!result">
+                                      <form @submit.prevent="shorten()">
+                                        <div class="_ls-field">
+                                          <label class="_ls-label" for="idx-ls-url">URL</label>
+                                          <input class="_ls-input" id="idx-ls-url" type="url" x-model="url" placeholder="https://example.com" required>
+                                        </div>
+                                        <button type="button" class="_ls-adv-toggle" @click="showAdv=!showAdv" x-text="showAdv ? '− hide options' : '+ options'"></button>
+                                        <div class="_ls-advanced" x-show="showAdv">
+                                          <div class="_ls-field">
+                                            <label class="_ls-label" for="idx-ls-pw">Password (optional)</label>
+                                            <input class="_ls-input" id="idx-ls-pw" type="password" x-model="password" placeholder="leave blank for public link" autocomplete="new-password">
+                                          </div>
+                                          <div class="_ls-field">
+                                            <label class="_ls-label" for="idx-ls-code">Custom code (optional)</label>
+                                            <input class="_ls-input" id="idx-ls-code" type="text" x-model="customCode" placeholder="my-link" pattern="[a-zA-Z0-9_\-]{3,32}">
+                                          </div>
+                                          <div class="_ls-field">
+                                            <label class="_ls-label" for="idx-ls-exp">Expires in days (optional, 1–365)</label>
+                                            <input class="_ls-input" id="idx-ls-exp" type="number" x-model="expiresInDays" placeholder="30" min="1" max="365">
+                                          </div>
+                                        </div>
+                                        <p x-show="error" class="_ls-error" x-text="error"></p>
+                                        <!-- Turnstile CAPTCHA (auto-rendered when site key is configured) -->
+                                        <div x-show="turnstileSiteKey" x-ref="ts" style="margin:.5rem 0"></div>
+                                        <button type="submit" class="_ls-btn" :disabled="loading">
+                                          <span x-text="loading ? 'creating...' : 'create short link'"></span>
+                                        </button>
+                                      </form>
+                                    </div>
+                                    <div x-show="result">
+                                      <div class="_ls-result">
+                                        <p class="_ls-result-label">Your short link</p>
+                                        <div class="_ls-result-row">
+                                          <a class="_ls-result-url" :href="result?.short_url" target="_blank" rel="noopener" x-text="result?.short_url"></a>
+                                          <button class="_ls-copy" @click="copyUrl()" x-text="copied ? 'copied!' : 'copy'"></button>
+                                        </div>
+                                        <template x-if="result?.has_password"><p class="_ls-meta">password protected</p></template>
+                                        <template x-if="result?.expires_at"><p class="_ls-meta" x-text="'expires ' + formatDate(result.expires_at)"></p></template>
+                                        <div class="_ls-token-box">
+                                          <p class="_ls-token-label">Deletion token — save this, shown once</p>
+                                          <code class="_ls-token" x-text="result?.deletion_token"></code>
+                                          <p class="_ls-token-hint">Use in the Stats tab to view analytics or delete the link.</p>
+                                        </div>
+                                        <button class="_ls-btn _ls-btn-ghost" style="margin-top:1rem" @click="reset()">shorten another</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- Stats panel -->
+                                  <div x-show="tab === 'stats'">
+                                    <form @submit.prevent="loadStats()" x-show="!stats">
+                                      <div class="_ls-field">
+                                        <label class="_ls-label" for="idx-ls-scode">Link code</label>
+                                        <input class="_ls-input" id="idx-ls-scode" type="text" x-model="statsCode" placeholder="abc123">
+                                      </div>
+                                      <div class="_ls-field">
+                                        <label class="_ls-label" for="idx-ls-stoken">Deletion token</label>
+                                        <input class="_ls-input" id="idx-ls-stoken" type="text" x-model="statsToken" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx">
+                                      </div>
+                                      <p x-show="statsError" class="_ls-error" x-text="statsError"></p>
+                                      <button type="submit" class="_ls-btn" :disabled="statsLoading">
+                                        <span x-text="statsLoading ? 'loading...' : 'view stats'"></span>
+                                      </button>
+                                    </form>
+                                    <div x-show="stats">
+                                      <div class="_ls-stat-header">
+                                        <div>
+                                          <p class="_ls-label">Short link</p>
+                                          <a class="_ls-result-url" :href="stats?.short_url" target="_blank" rel="noopener" x-text="stats?.short_url"></a>
+                                        </div>
+                                        <button class="_ls-btn _ls-btn-ghost _ls-btn-sm" @click="stats=null;statsError=null">back</button>
+                                      </div>
+                                      <p class="_ls-meta" x-text="'→ ' + stats?.original_url"></p>
+                                      <div class="_ls-stat-grid">
+                                        <div class="_ls-stat-card">
+                                          <p class="_ls-stat-num" x-text="stats?.total_clicks"></p>
+                                          <p class="_ls-label">Total clicks</p>
+                                        </div>
+                                        <div class="_ls-stat-card">
+                                          <p class="_ls-stat-num" x-text="formatDate(stats?.created_at)"></p>
+                                          <p class="_ls-label">Created</p>
+                                        </div>
+                                        <div class="_ls-stat-card">
+                                          <p class="_ls-stat-num" x-text="stats?.expires_at ? formatDate(stats.expires_at) : '∞'"></p>
+                                          <p class="_ls-label">Expires</p>
+                                        </div>
+                                        <div class="_ls-stat-card">
+                                          <p class="_ls-stat-num" x-text="stats?.has_password ? '🔒' : '—'"></p>
+                                          <p class="_ls-label">Password</p>
+                                        </div>
+                                      </div>
+                                      <template x-if="stats?.daily_clicks?.length">
+                                        <div>
+                                          <p class="_ls-label" style="margin-bottom:.6rem">Clicks · last 30 days</p>
+                                          <div class="_ls-bars">
+                                            <template x-for="d in stats.daily_clicks" :key="d.day">
+                                              <div class="_ls-bar-item" :title="d.day + ': ' + d.count + ' click' + (d.count !== 1 ? 's' : '')">
+                                                <div class="_ls-bar" :style="`height:${(d.count / Math.max(...stats.daily_clicks.map(x=>x.count),1))*100}%`"></div>
+                                              </div>
+                                            </template>
+                                          </div>
+                                        </div>
+                                      </template>
+                                      <!-- Device breakdown -->
+                                      <template x-if="stats?.device_breakdown && Object.values(stats.device_breakdown).some(v=>v>0)">
+                                        <div style="margin:1.25rem 0 0">
+                                          <p class="_ls-label" style="margin-bottom:.6rem">Devices</p>
+                                          <div style="display:flex;flex-wrap:wrap;gap:4px">
+                                            <template x-for="[type, count] in Object.entries(stats.device_breakdown).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1])" :key="type">
+                                              <div class="_ls-stat-card" style="padding:.45rem .7rem;display:flex;align-items:center;gap:.5rem">
+                                                <span class="_ls-stat-num" style="font-size:.95em;margin:0" x-text="count"></span>
+                                                <span class="_ls-label" style="margin:0" x-text="type"></span>
+                                              </div>
+                                            </template>
+                                          </div>
+                                        </div>
+                                      </template>
+                                      <!-- Top referrers -->
+                                      <template x-if="stats?.top_referrers?.length">
+                                        <div style="margin:1.25rem 0 0">
+                                          <p class="_ls-label" style="margin-bottom:.6rem">Top referrers</p>
+                                          <div style="display:flex;flex-direction:column;gap:3px">
+                                            <template x-for="r in stats.top_referrers" :key="r.domain">
+                                              <div style="display:flex;justify-content:space-between;padding:.3rem .5rem;border:1px solid var(--color-border)">
+                                                <span style="font-size:.78em;opacity:.75" x-text="r.domain"></span>
+                                                <span class="_ls-label" style="margin:0" x-text="r.count + (r.count===1?' click':' clicks')"></span>
+                                              </div>
+                                            </template>
+                                          </div>
+                                        </div>
+                                      </template>
+                                      <p x-show="statsError" class="_ls-error" x-text="statsError"></p>
+                                      <button class="_ls-btn _ls-btn-danger" style="margin-top:1.25rem" @click="deleteLink()">delete this link</button>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1212,7 +1564,7 @@
                                 </div>
                                 <div class="_serviceLink_1fs6u_643">
                                   <a
-                                    href="works/?category=event"
+                                    href="/works/?category=event"
                                     class="_root_2nwwz_1"
                                     data-invert="true"
                                   >
@@ -1281,7 +1633,7 @@
                                 </div>
                                 <div class="_serviceLink_1fs6u_643">
                                   <a
-                                    href="works/?category=goods"
+                                    href="/works/?category=goods"
                                     class="_root_2nwwz_1"
                                     data-invert="true"
                                   >
@@ -1361,7 +1713,7 @@
                   <h3 class="_heading_o1ekn_1">(pickup works)</h3>
                   <ul class="_list_o1ekn_7">
                     <li class="_item_o1ekn_11">
-                      <a href="works/mhm/" class="_pickupCard_o1ekn_15">
+                      <a href="/works/mhm/" class="_pickupCard_o1ekn_15">
                         <h4 class="_title_o1ekn_41">插圖書封面</h4>
                         <ul class="_tags_o1ekn_46">
                           <li class="_tag_o1ekn_46">插圖</li>
@@ -1402,7 +1754,7 @@
                       </a>
                     </li>
                     <li class="_item_o1ekn_11">
-                      <a href="works/222109/" class="_pickupCard_o1ekn_15">
+                      <a href="/works/222109/" class="_pickupCard_o1ekn_15">
                         <h4 class="_title_o1ekn_41">貓咪日 Avail T恤插圖</h4>
                         <ul class="_tags_o1ekn_46">
                           <li class="_tag_o1ekn_46">插圖</li>
@@ -1443,7 +1795,7 @@
                       </a>
                     </li>
                     <li class="_item_o1ekn_11">
-                      <a href="works/BLACKmeme/" class="_pickupCard_o1ekn_15">
+                      <a href="/works/BLACKmeme/" class="_pickupCard_o1ekn_15">
                         <h4 class="_title_o1ekn_41">meme插圖</h4>
                         <ul class="_tags_o1ekn_46">
                           <li class="_tag_o1ekn_46">插圖</li>
@@ -1485,7 +1837,7 @@
                     </li>
                     <li class="_item_o1ekn_11">
                       <a
-                        href="works/ikebukuro109/"
+                        href="/works/ikebukuro109/"
                         class="_pickupCard_o1ekn_15"
                       >
                         <h4 class="_title_o1ekn_41">池袋emotions2022</h4>
@@ -1528,7 +1880,7 @@
                       </a>
                     </li>
                     <li class="_item_o1ekn_11">
-                      <a href="works/meidonohi/" class="_pickupCard_o1ekn_15">
+                      <a href="/works/meidonohi/" class="_pickupCard_o1ekn_15">
                         <h4 class="_title_o1ekn_41">女僕之日</h4>
                         <ul class="_tags_o1ekn_46">
                           <li class="_tag_o1ekn_46">插圖</li>
@@ -1569,7 +1921,7 @@
                       </a>
                     </li>
                     <li class="_item_o1ekn_11">
-                      <a href="works/y2k-nui/" class="_pickupCard_o1ekn_15">
+                      <a href="/works/y2k-nui/" class="_pickupCard_o1ekn_15">
                         <h4 class="_title_o1ekn_41">Y2K布偶展</h4>
                         <ul class="_tags_o1ekn_46">
                           <li class="_tag_o1ekn_46">活動</li>
@@ -2160,31 +2512,6 @@
                 <canvas></canvas>
               </div>
             </div>
-            <ul class="_sns_m7rmt_35">
-              <li>
-                <a
-                  href="https://www.instagram.com/crsves/"
-                  class="_snsLink_m7rmt_45"
-                >
-                  Instagram @crsves
-                </a>
-              </li>
-              <li>
-                <a href="https://discord.com/" class="_snsLink_m7rmt_45">
-                  Discord @crsves
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hi@crsv.es" class="_snsLink_m7rmt_45">
-                  hi@crsv.es
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/crsves" class="_snsLink_m7rmt_45">
-                  GitHub @crsves
-                </a>
-              </li>
-            </ul>
             <div>
               <p class="_credit_m7rmt_59">
                 Name: crsves<br />
@@ -2249,5 +2576,126 @@
         </div>
       </template>
     </div>
+    <script>
+      window.linkShortener = () => ({
+        tab: 'shorten',
+        url: '', password: '', customCode: '', expiresInDays: '',
+        showAdv: false, loading: false, error: null, result: null, copied: false,
+        statsCode: '', statsToken: '', statsLoading: false, statsError: null, stats: null,
+        turnstileSiteKey: null, turnstileToken: null, _tId: null,
+
+        async init() {
+          try {
+            const cfg = await fetch('/api/config').then(r => r.json());
+            if (cfg.turnstile_site_key) {
+              this.turnstileSiteKey = cfg.turnstile_site_key;
+              this.$nextTick(() => this._loadTS());
+            }
+          } catch {}
+        },
+
+        _loadTS() {
+          const me = this;
+          function tryRender() {
+            if (!window.turnstile || me._tId !== null || !me.$refs?.ts) return;
+            me._tId = window.turnstile.render(me.$refs.ts, {
+              sitekey: me.turnstileSiteKey,
+              callback: t => { me.turnstileToken = t; },
+              'expired-callback': () => { me.turnstileToken = null; },
+            });
+          }
+          if (window.turnstile) { tryRender(); return; }
+          if (!document.getElementById('_ts_script')) {
+            const s = document.createElement('script');
+            s.id = '_ts_script';
+            s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+            s.onload = tryRender;
+            document.head.appendChild(s);
+          }
+          setTimeout(tryRender, 600);
+        },
+
+        _resetTS() {
+          if (window.turnstile && this._tId !== null) {
+            window.turnstile.reset(this._tId);
+            this.turnstileToken = null;
+          }
+        },
+
+        async shorten() {
+          this.error = null;
+          if (this.turnstileSiteKey && !this.turnstileToken) {
+            this.error = 'Please complete the CAPTCHA.'; return;
+          }
+          this.loading = true;
+          try {
+            const body = { url: this.url };
+            if (this.password) body.password = this.password;
+            if (this.customCode) body.custom_code = this.customCode;
+            if (this.expiresInDays) body.expires_in_days = parseInt(this.expiresInDays, 10);
+            if (this.turnstileToken) body.cf_turnstile_token = this.turnstileToken;
+            const res = await fetch('/api/links', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(body),
+            });
+            const data = await res.json();
+            if (!res.ok) { this.error = data.error || 'Something went wrong.'; this._resetTS(); return; }
+            this.result = data;
+            this.url = ''; this.password = ''; this.customCode = '';
+            this.expiresInDays = ''; this.showAdv = false;
+            this._resetTS();
+          } catch { this.error = 'Network error. Please try again.'; this._resetTS(); }
+          finally { this.loading = false; }
+        },
+
+        async copyUrl() {
+          if (!this.result) return;
+          await navigator.clipboard.writeText(this.result.short_url);
+          this.copied = true;
+          setTimeout(() => { this.copied = false; }, 2000);
+        },
+
+        reset() { this.result = null; this.error = null; },
+
+        async loadStats() {
+          this.statsError = null; this.stats = null;
+          if (!this.statsCode || !this.statsToken) {
+            this.statsError = 'Enter both the link code and your deletion token.'; return;
+          }
+          this.statsLoading = true;
+          try {
+            const res = await fetch(
+              `/api/links/${encodeURIComponent(this.statsCode)}/stats?token=${encodeURIComponent(this.statsToken)}`
+            );
+            const data = await res.json();
+            if (!res.ok) { this.statsError = data.error || 'Error loading stats.'; return; }
+            this.stats = data;
+          } catch { this.statsError = 'Network error.'; }
+          finally { this.statsLoading = false; }
+        },
+
+        async deleteLink() {
+          if (!this.stats) return;
+          if (!confirm(`Delete /${this.stats.code}? This cannot be undone.`)) return;
+          try {
+            const res = await fetch(
+              `/api/links/${encodeURIComponent(this.stats.code)}?token=${encodeURIComponent(this.statsToken)}`,
+              { method: 'DELETE' }
+            );
+            const data = await res.json();
+            if (!res.ok) { this.statsError = data.error || 'Error deleting.'; return; }
+            this.stats = null; this.statsCode = ''; this.statsToken = ''; this.statsError = null;
+            alert('Link deleted.');
+          } catch { this.statsError = 'Network error.'; }
+        },
+
+        formatDate(ts) {
+          if (!ts) return '—';
+          return new Date(ts * 1000).toLocaleDateString(undefined,
+            { year: 'numeric', month: 'short', day: 'numeric' });
+        },
+      });
+    </script>
   </body>
 </html>

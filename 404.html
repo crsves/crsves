@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 | crsves</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        color: #f6f1eb;
+        background:
+          radial-gradient(circle at top left, rgba(255, 145, 112, 0.38), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(255, 215, 126, 0.24), transparent 32%),
+          linear-gradient(160deg, #171212 0%, #090909 100%);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .shell {
+        width: min(48rem, 100%);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: rgba(9, 9, 9, 0.88);
+        box-shadow: 0 32px 96px rgba(0, 0, 0, 0.5);
+      }
+      .panel {
+        display: grid;
+        gap: 1.1rem;
+        padding: clamp(1.25rem, 4vw, 2.5rem);
+      }
+      .eyebrow {
+        margin: 0;
+        font-size: 0.76rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        opacity: 0.58;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        line-height: 0.9;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .copy {
+        max-width: 34rem;
+        margin: 0;
+        line-height: 1.65;
+        opacity: 0.82;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+      .action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.8rem 1.1rem;
+        color: inherit;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.74rem;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.04);
+      }
+      .action:hover {
+        background: #f6f1eb;
+        color: #080808;
+      }
+      .grid {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .card {
+        min-height: 8rem;
+        padding: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.03);
+      }
+      .card strong {
+        display: block;
+        margin-bottom: 0.45rem;
+        font-size: 0.88rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .card p {
+        margin: 0;
+        font-size: 0.88rem;
+        line-height: 1.55;
+        opacity: 0.75;
+      }
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <p class="eyebrow">404 / crsv.es</p>
+        <h1>Page Missing</h1>
+        <p class="copy">
+          The page you asked for is not here. The main routes below are still live,
+          and the shortener is available from the works view if you need a new link.
+        </p>
+        <div class="actions">
+          <a class="action" href="/">Home</a>
+          <a class="action" href="/works/">Works</a>
+          <a class="action" href="/profile/">Profile</a>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <strong>Home</strong>
+            <p>Return to the landing page and the homepage shortener panel.</p>
+          </div>
+          <div class="card">
+            <strong>Works</strong>
+            <p>Browse the archive or open the link-shortener category directly.</p>
+          </div>
+          <div class="card">
+            <strong>Profile</strong>
+            <p>Open the profile page or jump into the fullscreen resume viewer.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

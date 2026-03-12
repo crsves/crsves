@@ -1,0 +1,19 @@
+[Unit]
+Description=crsv.es Link Shortener
+After=network.target
+
+[Service]
+Type=simple
+User=alkaline
+WorkingDirectory=/home/alkaline/crsves/shortener
+ExecStart=/home/alkaline/.nvm/versions/node/v20.19.5/bin/node server.js
+Restart=on-failure
+RestartSec=5
+EnvironmentFile=/home/alkaline/crsves/shortener/.env
+
+# Security hardening
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

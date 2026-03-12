@@ -23,8 +23,8 @@
       property="og:description"
       content="crsves，位於 Canada。Instagram：@crsves，Discord：@crsves，Email：hi@crsv.es，GitHub：@crsves。"
     />
-    <meta property="og:url" content="https://109ichiki.com/profile/" />
-    <meta property="og:image" content="https://109ichiki.com/og-image.png" />
+    <meta property="og:url" content="https://crsv.es/profile/" />
+    <meta property="og:image" content="https://crsv.es/og-image.png" />
     <meta property="og:site_name" content="crsves" />
     <meta property="og:locale" content="zh_TW" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -114,9 +114,133 @@
       ._scard svg {
         flex-shrink: 0;
       }
+      ._resumeSection {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        border-left: 1px solid var(--color-border);
+      }
+      ._resumeCard {
+        display: grid;
+        gap: 0.9rem;
+        margin-top: 2.34375rem;
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        color: inherit;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.03);
+      }
+      ._resumeCard:hover {
+        opacity: 0.8;
+      }
+      ._resumeLabel {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.75rem;
+        font-size: 0.72em;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+      ._resumeTitle {
+        font-size: 1.15em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      ._resumeHint {
+        font-size: 0.82em;
+        opacity: 0.7;
+      }
+      ._resumePreview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 18rem;
+        border: 1px solid var(--color-border);
+        background: #0a0a0a;
+        overflow: hidden;
+      }
+      ._resumePreview img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      ._resumeOverlay {
+        position: fixed;
+        inset: 0;
+        display: none;
+        z-index: 200;
+      }
+      ._resumeOverlay:target {
+        display: block;
+      }
+      ._resumeBackdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.84);
+        backdrop-filter: blur(8px);
+      }
+      ._resumePanel {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        width: 100%;
+        height: 100%;
+        padding: var(--padding-outside);
+      }
+      ._resumePanelHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.78em;
+      }
+      ._resumeClose {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-border);
+      }
+      ._resumeFrame {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        background: #080808;
+      }
+      ._resumeFrame img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
       @media screen and (max-width: 768px) {
+        ._resumeSection {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+          border-left: none;
+        }
+        ._resumePreview {
+          min-height: 12rem;
+        }
+        ._resumePanel {
+          padding: 1rem;
+        }
         ._kvDialogImage_cpv9r_219 {
-          top: calc(28.75rem - 100vw + 1.25rem);
+          top: calc(28.75rem - 100vw);
+        }
+
+        ._kvDialogImage_cpv9r_219 picture {
+          display: block;
+          transform: translateY(8rem);
+        }
+
+        ._kvDialogImage_cpv9r_219 img {
+          transform: translateY(8rem);
         }
       }
     </style>
@@ -236,7 +360,7 @@
           </a>
         </li>
         <li>
-          <a href="./" class="_link_2f0wn_81" data-js="hamburger-menu-link">
+          <a href="/profile/" class="_link_2f0wn_81" data-js="hamburger-menu-link">
             Profile
           </a>
         </li>
@@ -320,7 +444,7 @@
                 data-js="header-menu-item"
                 data-id="profile"
               >
-                <a href="./" class="_menuLink_10du9_60"> Profile </a>
+                <a href="/profile/" class="_menuLink_10du9_60"> Profile </a>
               </li>
               <li
                 class="_menuItem_10du9_55"
@@ -838,74 +962,44 @@
                   <canvas></canvas>
                 </div>
               </div>
-              <section class="_subSection_cpv9r_322">
+              <section class="_subSection_cpv9r_322 _resumeSection">
                 <div class="_subSectionInner_cpv9r_335">
-                  <h2 class="_subHeading_cpv9r_349">(Links)</h2>
-                  <ul class="_subContent_cpv9r_356">
-                    <li>
-                      <a
-                        href="https://www.instagram.com/crsves/"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        Twitter
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/crsves"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        Instagram
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:hi@crsv.es"
-                        target="_blank"
-                        rel="noopener"
-                      >
-                        BOOTH
-                      </a>
-                    </li>
-                  </ul>
+                  <h2 class="_subHeading_cpv9r_349">(Resume)</h2>
+                  <a class="_resumeCard" href="https://crsv.es/profile#resume">
+                    <span class="_resumeLabel">
+                      <span>one connected file</span>
+                      <span>opens fullscreen</span>
+                    </span>
+                    <strong class="_resumeTitle">devin.png</strong>
+                    <span class="_resumeHint">Open the in-page viewer for the full resume.</span>
+                    <div class="_resumePreview">
+                      <img src="/devin.png" alt="Resume preview for crsves" loading="lazy" />
+                    </div>
+                  </a>
                   <div class="_sectionSubBarcode_cpv9r_371">
                     <span
                       class="_barcode_iyu6r_1"
                       aria-hidden="true"
                       translate="no"
-                      text="links"
-                      >links</span
-                    >
-                  </div>
-                </div>
-              </section>
-              <section class="_subSection_cpv9r_322">
-                <span class="_line_yr5zo_2"></span>
-                <div class="_subSectionInner_cpv9r_335">
-                  <h2 class="_subHeading_cpv9r_349">(History)</h2>
-                  <ul class="_subContent_cpv9r_356">
-                    <li>2025 Y2K布偶展</li>
-                    <li>2024 池袋PARCO Emotions2024</li>
-                    <li>2024 404中國展</li>
-                    <li>2024 超會議（超繪師展）</li>
-                    <li>2023 蒸氣波展</li>
-                    <li>2025 可愛是⚪︎⚪︎展</li>
-                    <li>2025 沉溺於緞帶展</li>
-                  </ul>
-                  <div class="_sectionSubBarcode_cpv9r_371">
-                    <span
-                      class="_barcode_iyu6r_1"
-                      aria-hidden="true"
-                      translate="no"
-                      text="history"
-                      >history</span
+                      text="resume"
+                      >resume</span
                     >
                   </div>
                 </div>
               </section>
             </div>
+            <section id="resume" class="_resumeOverlay" aria-label="Resume viewer">
+              <a class="_resumeBackdrop" href="/profile/" aria-label="Close resume viewer"></a>
+              <div class="_resumePanel">
+                <div class="_resumePanelHeader">
+                  <p>crsves / resume</p>
+                  <a class="_resumeClose" href="/profile/">close</a>
+                </div>
+                <div class="_resumeFrame">
+                  <img src="/devin.png" alt="Resume for crsves" />
+                </div>
+              </div>
+            </section>
             <div class="_pickup_cpv9r_423">
               <section>
                 <h2 class="_heading_o1ekn_1">(pickup works)</h2>
@@ -1195,31 +1289,6 @@
                 <canvas></canvas>
               </div>
             </div>
-            <ul class="_sns_m7rmt_35">
-              <li>
-                <a
-                  href="https://www.instagram.com/crsves/"
-                  class="_snsLink_m7rmt_45"
-                >
-                  Instagram @crsves
-                </a>
-              </li>
-              <li>
-                <a href="https://discord.com/" class="_snsLink_m7rmt_45">
-                  Discord @crsves
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hi@crsv.es" class="_snsLink_m7rmt_45">
-                  hi@crsv.es
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/crsves" class="_snsLink_m7rmt_45">
-                  GitHub @crsves
-                </a>
-              </li>
-            </ul>
             <div>
               <p class="_credit_m7rmt_59">
                 Name: crsves<br />
